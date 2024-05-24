@@ -155,25 +155,26 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'📨 𝑰𝒏𝒇𝒐', 'reqinfo'),
+                    InlineKeyboardButton(f'⚙ 𝑩𝒆𝒔𝒕', 'minfo'),                   
+                    InlineKeyboardButton(f'🎁 𝑻𝒊𝒑𝒔', 'tinfo')
                 ]
             )
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'📨 𝑰𝒏𝒇𝒐', 'reqinfo'),
+                    InlineKeyboardButton(f'⚙ 𝑩𝒆𝒔𝒕', 'minfo'),                   
+                    InlineKeyboardButton(f'🎁 𝑻𝒊𝒑𝒔', 'tinfo')
                 ]
             )            
     except KeyError:
         await save_group_settings(query.message.chat.id, 'auto_delete', True)
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                  InlineKeyboardButton(f'📨 𝑰𝒏𝒇𝒐', 'reqinfo'),
+                  InlineKeyboardButton(f'⚙ 𝑩𝒆𝒔𝒕', 'minfo'),                   
+                  InlineKeyboardButton(f'🎁 𝑻𝒊𝒑𝒔', 'tinfo')
             ]
         )
     try:
@@ -329,17 +330,18 @@ async def language_check(bot, query):
             if settings['auto_delete']:
                 btn.insert(0, 
                     [
-                        InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                        InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                        InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                        InlineKeyboardButton(f'📨 𝑰𝒏𝒇𝒐', 'reqinfo'),
+                        InlineKeyboardButton(f'⚙ 𝑩𝒆𝒔𝒕', 'minfo'),                   
+                        InlineKeyboardButton(f'🎁 𝑻𝒊𝒑𝒔', 'tinfo')
                     ]
                 )
 
             else:
                 btn.insert(0, 
                     [
-                        InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                        InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                        InlineKeyboardButton(f'📨 𝑰𝒏𝒇𝒐', 'reqinfo'),
+                        InlineKeyboardButton(f'⚙ 𝑩𝒆𝒔𝒕', 'minfo'),                   
+                        InlineKeyboardButton(f'🎁 𝑻𝒊𝒑𝒔', 'tinfo')
                     ]
                 )
                     
@@ -347,9 +349,9 @@ async def language_check(bot, query):
             await save_group_settings(query.message.chat.id, 'auto_delete', True)
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'📨 𝑰𝒏𝒇𝒐', 'reqinfo'),
+                    InlineKeyboardButton(f'⚙ 𝑩𝒆𝒔𝒕', 'minfo'),                   
+                    InlineKeyboardButton(f'🎁 𝑻𝒊𝒑𝒔', 'tinfo')
                 ]
             )
         
@@ -1619,25 +1621,26 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'📨 𝑰𝒏𝒇𝒐', 'reqinfo'),
+                    InlineKeyboardButton(f'⚙ 𝑩𝒆𝒔𝒕', 'minfo'),                   
+                    InlineKeyboardButton(f'🎁 𝑻𝒊𝒑𝒔', 'tinfo')
                 ]
             )
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'📨 𝑰𝒏𝒇𝒐', 'reqinfo'),
+                    InlineKeyboardButton(f'⚙ 𝑩𝒆𝒔𝒕', 'minfo'),                   
+                    InlineKeyboardButton(f'🎁 𝑻𝒊𝒑𝒔', 'tinfo')
                 ]
             )       
     except KeyError:
         await save_group_settings(message.chat.id, 'auto_delete', True)
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                InlineKeyboardButton(f'📨 𝑰𝒏𝒇𝒐', 'reqinfo'),
+                InlineKeyboardButton(f'⚙ 𝑩𝒆𝒔𝒕', 'minfo'),                   
+                InlineKeyboardButton(f'🎁 𝑻𝒊𝒑𝒔', 'tinfo')
             ]
         )
 
