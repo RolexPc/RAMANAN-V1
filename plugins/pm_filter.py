@@ -1961,7 +1961,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'♦️ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
+                InlineKeyboardButton(f'♦️ǫᴜᴀʟɪᴛʏ', callback_data=f"select_qual#{message.from_user.id}")
                 InlineKeyboardButton("🔷ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
                 InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
             ]
