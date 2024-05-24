@@ -2267,7 +2267,7 @@ async def auto_filter(client, msg, spoll=False):
         ]
     try:
         if settings['auto_delete']:
-            btn.insert(1, 
+            btn.insert(0, 
                 [
                     InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                     InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
