@@ -149,9 +149,9 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                    InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                    InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                    InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{search.replace(' ', '_')}#{key}")
                 ]
             )
         else:
@@ -165,9 +165,9 @@ async def next_page(bot, query):
         await save_group_settings(query.message.chat.id, 'auto_delete', True)
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{search.replace(' ', '_')}#{key}"),
+                InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{search.replace(' ', '_')}#{key}"),
+                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{search.replace(' ', '_')}#{key}")
             ]
         )
     try:
@@ -294,7 +294,7 @@ async def episodes_cb_handler(client: Client, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex(r"^fe#"))
 async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
-    _, lang, key = query.data.split("#")
+    _, lang, search, key = query.data.split("#")
     curr_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
     search = FRESH.get(key)
     search = search.replace("_", " ")
@@ -336,9 +336,9 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{search.replace(' ', '_')}#{key}"),
+                InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{search.replace(' ', '_')}#{key}"),
+                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{search.replace(' ', '_')}#{key}")
             ]
         )
         btn.insert(0, [
@@ -353,9 +353,9 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{search.replace(' ', '_')}#{key}"),
+                InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{search.replace(' ', '_')}#{key}"),
+                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{search.replace(' ', '_')}#{key}")
             ]
         )
         btn.insert(0, [
@@ -493,9 +493,9 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{search.replace(' ', '_')}#{key}"),
+                InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{search.replace(' ', '_')}#{key}"),
+                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{search.replace(' ', '_')}#{key}")
             ]
         )
         btn.insert(0, [
@@ -510,9 +510,9 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{search.replace(' ', '_')}#{key}"),
+                InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{search.replace(' ', '_')}#{key}"),
+                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{search.replace(' ', '_')}#{key}")
             ]
         )
         btn.insert(0, [
@@ -687,9 +687,9 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{search.replace(' ', '_')}#{key}"),
+                InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{search.replace(' ', '_')}#{key}"),
+                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{search.replace(' ', '_')}#{key}")
             ]
         )
         btn.insert(0, [
@@ -832,9 +832,9 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{search.replace(' ', '_')}#{key}"),
+                InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{search.replace(' ', '_')}#{key}"),
+                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{search.replace(' ', '_')}#{key}")
             ]
         )
         btn.insert(0, [
@@ -849,9 +849,9 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{search.replace(' ', '_')}#{key}"),
+                InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{search.replace(' ', '_')}#{key}"),
+                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{search.replace(' ', '_')}#{key}")
             ]
         )
         btn.insert(0, [
@@ -979,17 +979,18 @@ async def language_check(bot, query):
             if settings['auto_delete']:
                 btn.insert(0, 
                     [
-                        InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                        InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                        InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                        InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{search.replace(' ', '_')}#{key}"),
+                        InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{search.replace(' ', '_')}#{key}"),
+                        InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{search.replace(' ', '_')}#{key}")
                     ]
                 )
 
             else:
                 btn.insert(0, 
                     [
-                        InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                        InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                        InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{search.replace(' ', '_')}#{key}"),
+                        InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{search.replace(' ', '_')}#{key}"),
+                        InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{search.replace(' ', '_')}#{key}")
                     ]
                 )
                     
@@ -997,9 +998,9 @@ async def language_check(bot, query):
             await save_group_settings(query.message.chat.id, 'auto_delete', True)
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{search.replace(' ', '_')}#{key}")
                 ]
             )
         
@@ -2269,9 +2270,9 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                    InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                    InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                    InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{search.replace(' ', '_')}#{key}"),
+                    InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{search.replace(' ', '_')}#{key}")
                 ]
             )
         else:
@@ -2285,9 +2286,9 @@ async def auto_filter(client, msg, spoll=False):
         await save_group_settings(message.chat.id, 'auto_delete', True)
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{search.replace(' ', '_')}#{key}"),
+                InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{search.replace(' ', '_')}#{key}"),
+                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{search.replace(' ', '_')}#{key}")
             ]
         )
 
