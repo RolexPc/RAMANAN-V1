@@ -297,7 +297,7 @@ async def episodes_cb_handler(client: Client, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex(r"^fe#"))
 async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
-    _, lang, key = query.data.split("#")
+    _, epso, key = query.data.split("#")
     curr_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
     search = FRESH.get(key)
     search = search.replace("_", " ")
@@ -2119,25 +2119,25 @@ async def auto_filter(client, msg, spoll=False):
             btn.insert(0, 
             [
                 InlineKeyboardButton(f'♦️ǫᴜᴀʟɪᴛʏ', callback_data=f"select_qual#{message.from_user.id}"),
-                InlineKeyboardButton("🔷ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton("🔷ᴇᴘɪsᴏᴅᴇs", callback_data=f"select_epso#{message.from_user.id}"),
+                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"select_seas#{message.from_user.id}"),
             ]
             )
         else:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'♦️ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("🔷ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'♦️ǫᴜᴀʟɪᴛʏ', callback_data=f"select_qual#{message.from_user.id}"),
+                InlineKeyboardButton("🔷ᴇᴘɪsᴏᴅᴇs", callback_data=f"select_epso#{message.from_user.id}"),
+                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"select_seas#{message.from_user.id}"),
             ]
             )       
     except KeyError:
         await save_group_settings(message.chat.id, 'auto_delete', True)
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'♦️ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("🔷ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton(f'♦️ǫᴜᴀʟɪᴛʏ', callback_data=f"select_qual#{message.from_user.id}"),
+                InlineKeyboardButton("🔷ᴇᴘɪsᴏᴅᴇs", callback_data=f"select_epso#{message.from_user.id}"),
+                InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"select_seas#{message.from_user.id}"),
             ]
         )
 
