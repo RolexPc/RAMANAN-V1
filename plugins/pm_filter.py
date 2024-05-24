@@ -1805,7 +1805,7 @@ async def auto_filter(client, msg, spoll=False):
         await save_group_settings(message.chat.id, 'auto_delete', True)
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
+                InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"select_lang#{message.from_user.id}")
                 InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
                 InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
             ]
