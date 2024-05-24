@@ -160,7 +160,8 @@ async def next_page(bot, query):
                 InlineKeyboardButton(f'🔷 ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 InlineKeyboardButton("♦️ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
                 InlineKeyboardButton("🔶sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
-            ]            
+            ] 
+            )
     except KeyError:
         await save_group_settings(query.message.chat.id, 'auto_delete', True)
         btn.insert(0, 
