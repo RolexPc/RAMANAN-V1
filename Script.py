@@ -1,6 +1,18 @@
 class script(object):
-    START_TXT = """<b>Hᴇʟʟᴏ {},
-Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs, Jᴜsᴛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ Aɴᴅ Eɴᴊᴏʏ 😍</b>"""
+    START_TXT = """
+<b>
+𝐻𝑒𝑙𝑙𝑜 👋 {}</b>😍
+
+
+<b>I'ᴍ <a href=https://t.me/{}>{}</a> Yᴏᴜ Cᴀɴ Cᴀʟʟ Mᴇ Aꜱ Aᴜᴛᴏ Fɪʟᴛᴇʀ Bᴏᴛ ᴠ2 🫶</b>
+
+<b>Exᴄʟᴜꜱɪᴠᴇʟʏ Mᴀᴅᴇ Tʜɪꜱ Bᴏᴛ Fᴏʀ @ARAKAL_THERAVAD_GROUP_01..!! 💫</b>
+
+<b>📌 Sᴜᴘᴘᴏʀᴛ : @OTT_ARAKAL_THERAVAD_MOVIESS</b>
+
+<b>🍂 Oᴡɴᴇʀ : @ARAKAL_THERAVAD_MOVIES_02_bot</b>
+
+<b>👉🏻 Fᴏʀ Mᴏʀᴇ Dᴇᴛᴀɪʟꜱ Cʟɪᴄᴋ /help </b>"""
 
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
@@ -131,24 +143,38 @@ Nᴀᴍᴇ - {}"""
     CUDNT_FND = """ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}
 ᴅɪᴅ ʏᴏᴜ ᴍᴇᴀɴ ᴀɴʏ ᴏɴᴇ ᴏꜰ ᴛʜᴇꜱᴇ?"""
 
-    I_CUDNT = """<b>sᴏʀʀʏ ɴᴏ ꜰɪʟᴇs ᴡᴇʀᴇ ꜰᴏᴜɴᴅ ꜰᴏʀ ʏᴏᴜʀ ʀᴇǫᴜᴇꜱᴛ {} 😕
+    I_CUDNT = """<b>➠➠ ⚠️ നിങ്ങൾ ചോദിച്ച മൂവി OTT യിൽ റിലീസ് ആയിട്ടില്ല..!!⚡</b>
 
-ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ ɪɴ ɢᴏᴏɢʟᴇ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ 😃
 
-ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ 👇
+<b>➠➠ 📌 OTT യിൽ മൂവി റിലീസ് അയാൽ മാത്രമെ ടെലഗ്രാമിൽ വരൂ..!!💥
 
-ᴇxᴀᴍᴘʟᴇ : Uncharted or Uncharted 2022 or Uncharted En
+╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
+Cʜᴇᴄᴋ 👉 @OTT_ARAKAL_THERAVAD_MOVIESS Kɴᴏᴡ Tʜᴇ Oᴛᴛ Uᴘᴅᴀᴛᴇꜱ..!!
+╚════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝
 
-ꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ 👇
+ <i>‼ 𝖱𝖾𝗉𝗈𝗋𝗍 𝗍𝗈 𝖺𝖽𝗆𝗂𝗇 ▶ @ARAKAL_THERAVAD_MOVIES_02_bot </b>"""
 
-ᴇxᴀᴍᴘʟᴇ : Loki S01 or Loki S01E04 or Lucifer S03E24
+    I_CUD_NT = """<b>➠➠ ⚠️ നിങ്ങൾ ചോദിച്ച മൂവി OTT യിൽ റിലീസ് ആയിട്ടില്ല..!!⚡</b>
 
-🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)</b>"""
 
-    I_CUD_NT = """ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}.
-ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ ᴏʀ ɪᴍᴅʙ..."""
+<b>➠➠ 📌 OTT യിൽ മൂവി റിലീസ് അയാൽ മാത്രമെ ടെലഗ്രാമിൽ വരൂ..!!💥
 
-    MVE_NT_FND = """ᴍᴏᴠɪᴇ ɴᴏᴛ ꜰᴏᴜɴᴅ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ..."""
+╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
+Cʜᴇᴄᴋ 👉 @OTT_ARAKAL_THERAVAD_MOVIESS Kɴᴏᴡ Tʜᴇ Oᴛᴛ Uᴘᴅᴀᴛᴇꜱ..!!
+╚════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝
+
+ <i>‼ 𝖱𝖾𝗉𝗈𝗋𝗍 𝗍𝗈 𝖺𝖽𝗆𝗂𝗇 ▶ @ARAKAL_THERAVAD_MOVIES_02_bot </b>"""
+
+    MVE_NT_FND = """<b>➠➠ ⚠️ നിങ്ങൾ ചോദിച്ച മൂവി OTT യിൽ റിലീസ് ആയിട്ടില്ല..!!⚡</b>
+
+
+<b>➠➠ 📌 OTT യിൽ മൂവി റിലീസ് അയാൽ മാത്രമെ ടെലഗ്രാമിൽ വരൂ..!!💥
+
+╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
+Cʜᴇᴄᴋ 👉 @OTT_ARAKAL_THERAVAD_MOVIESS Kɴᴏᴡ Tʜᴇ Oᴛᴛ Uᴘᴅᴀᴛᴇꜱ..!!
+╚════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝
+
+ <i>‼ 𝖱𝖾𝗉𝗈𝗋𝗍 𝗍𝗈 𝖺𝖽𝗆𝗂𝗇 ▶ @ARAKAL_THERAVAD_MOVIES_02_bot </b>"""
 
     TOP_ALRT_MSG = """Cʜᴇᴄᴋɪɴɢ Fᴏʀ Mᴏᴠɪᴇ Iɴ Dᴀᴛᴀʙᴀsᴇ..."""
 
@@ -194,17 +220,18 @@ Nᴀᴍᴇ - {}"""
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code>
+<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code></b>
 
 <b>
 ╭─────── • ◆ • ───────╮
-🔅 Dᴀʀᴋ Mᴏᴅᴇ :  <a href="https://t.me/addtheme/DQ_The_File_Donor_Theme">Tᴏᴜᴄʜ</a>
+⚙️ Fɪʟᴇ Sɪᴢᴇ : {file_size}
 ╰─────── • ◆ • ───────╯
 
-=========== • ✠ • ===========
-▫️ ᴄʜᴀɴɴᴇʟ : @DQ_The_File_Donor_Bot_Updates
-▫️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : @DQ_The_File_Donor_Support
-=========== • ✠ • ===========</b>"""
+ ╔═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╗
+ ♻️ 𝑱𝑶𝑰𝑵 :- <a href=https://t.me/+GjUPjypGvhAyNGU1> 𝐆𝐑𝐎𝐔𝐏 </a>
+ ♻️ 𝑱𝑶𝑰𝑵 :- <a href=https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS> 𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 </a>
+ ♻️ 𝑱𝑶𝑰𝑵 :- <a href=https://t.me/ARAKAL_THERAVAD_GROUP_LINKS> 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 </a>
+ ╚═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╝</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
