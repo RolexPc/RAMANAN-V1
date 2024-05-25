@@ -607,7 +607,7 @@ async def send_all(bot, userid, files, ident):
         else:
             pre = 'checksub' 
         btn = [[
-                InlineKeyboardButton("📢 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝘁𝗼 𝗷𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 📢", url=invite_link.invite_link)
+                InlineKeyboardButton("📢 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑻𝑶 𝑱𝑶𝑰𝑵 𝑪𝑯𝑨𝑵𝑵𝑬𝑳 📢", url=invite_link.invite_link)
             ],[
                 InlineKeyboardButton("🔄 𝖳𝗋𝗒 𝖠𝗀𝖺𝗂𝗇 🔄", callback_data=f"{pre}#send_all")
             ]]
