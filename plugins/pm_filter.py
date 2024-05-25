@@ -820,13 +820,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
 
     elif query.data == "winfo":
-        await query.answer("NOT AVILABLE.", show_alert=True)      
+        await query.answer("𝐍𝐎𝐓 𝐀𝐕𝐈𝐋𝐀𝐁𝐋𝐄.", show_alert=True)      
 
     elif query.data == "qinfo":
-        await query.answer("NOT AVILABLE.", show_alert=True)
+        await query.answer("𝐍𝐎𝐓 𝐀𝐕𝐈𝐋𝐀𝐁𝐋𝐄.", show_alert=True)
 
     elif query.data == "einfo":
-        await query.answer("NOT AVILABLE.", show_alert=True)
+        await query.answer("𝐍𝐎𝐓 𝐀𝐕𝐈𝐋𝐀𝐁𝐋𝐄.", show_alert=True)
+
+    elif query.data == "rinfo":
+        await query.answer("𝐍𝐎𝐓 𝐀𝐕𝐈𝐋𝐀𝐁𝐋𝐄.", show_alert=True)
 
     elif query.data.startswith("send_fall"):
         temp_var, ident, offset, userid = query.data.split("#")
