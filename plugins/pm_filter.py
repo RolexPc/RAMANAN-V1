@@ -819,6 +819,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "pages":
         await query.answer()
 
+    elif query.data == "winfo":
+        await query.answer("NOT AVILABLE.", show_alert=True)      
+
+    elif query.data == "qinfo":
+        await query.answer("NOT AVILABLE.", show_alert=True)
+
+    elif query.data == "einfo":
+        await query.answer("NOT AVILABLE.", show_alert=True)
+
     elif query.data.startswith("send_fall"):
         temp_var, ident, offset, userid = query.data.split("#")
         if int(userid) not in [query.from_user.id, 0]:
@@ -1184,7 +1193,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "filters":
         buttons = [[
             InlineKeyboardButton('🕹 Mᴀɴᴜᴀʟ FIʟᴛᴇʀ', 'reqinfo'),
-            InlineKeyboardButton('📥 Aᴜᴛᴏ FIʟᴛᴇʀ', 'extinfo')
+            InlineKeyboardButton('📥 Aᴜᴛᴏ FIʟᴛᴇʀ', 'einfo')
         ],[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),            
         ]]
@@ -1222,8 +1231,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('💡FIʟᴛᴇʀs', callback_data='filters'),
             InlineKeyboardButton('⚠️ Fɪʟᴇ Sᴛᴏʀᴇ', 'minfo')
         ], [
-            InlineKeyboardButton('📍Cᴏɴɴᴇᴄᴛɪᴏɴ', 'coninfo'),
-            InlineKeyboardButton('⚙ Exᴛʀᴀ Mᴏᴅs', 'extinfo')
+            InlineKeyboardButton('📍Cᴏɴɴᴇᴄᴛɪᴏɴ', 'qinfo'),
+            InlineKeyboardButton('⚙ Exᴛʀᴀ Mᴏᴅs', 'winfo')
         ], [
             InlineKeyboardButton('♻️ Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('📈 Sᴛᴀᴛᴜs', callback_data='stats')
