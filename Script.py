@@ -10,9 +10,7 @@ class script(object):
 
 <b>📌 Sᴜᴘᴘᴏʀᴛ : @OTT_ARAKAL_THERAVAD_MOVIESS</b>
 
-<b>🍂 Oᴡɴᴇʀ : @ARAKAL_THERAVAD_MOVIES_02_bot</b>
-
-<b>👉🏻 Fᴏʀ Mᴏʀᴇ Dᴇᴛᴀɪʟꜱ Cʟɪᴄᴋ /help </b>"""
+<b>🍂 Oᴡɴᴇʀ : @ARAKAL_THERAVAD_MOVIES_02_bot</b>"""
 
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
@@ -220,15 +218,15 @@ Cʜᴇᴄᴋ 👉 @OTT_ARAKAL_THERAVAD_MOVIESS Kɴᴏᴡ Tʜᴇ Oᴛᴛ Uᴘᴅ�
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code></b>
+<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : <code>{file_name}</code></b>
 
 <b>
 ╭─────── • ◆ • ───────╮
-⚙️ Fɪʟᴇ Sɪᴢᴇ : {file_size}
+⚙️ Fɪʟᴇ Sɪᴢᴇ :  {file_size}
 ╰─────── • ◆ • ───────╯
 
  ╔═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╗
- ♻️ 𝑱𝑶𝑰𝑵 :- <a href=https://t.me/+GjUPjypGvhAyNGU1> 𝐆𝐑𝐎𝐔𝐏 </a>
+ ♻️ 𝑱𝑶𝑰𝑵 :- <a href=https://t.me/+TGgjhMVmwdUwNWY1> 𝐆𝐑𝐎𝐔𝐏 </a>
  ♻️ 𝑱𝑶𝑰𝑵 :- <a href=https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS> 𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 </a>
  ♻️ 𝑱𝑶𝑰𝑵 :- <a href=https://t.me/ARAKAL_THERAVAD_GROUP_LINKS> 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 </a>
  ╚═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╝</b>"""
