@@ -508,7 +508,7 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
     settings = await get_settings(message.chat.id)
     pre = 'filep' if settings['file_secure'] else 'file'
     if settings["button"]:
-       btn = [
+        btn = [
             [
                 InlineKeyboardButton(
                     text=f"📁 {get_size(file.file_size)} ▷ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}'
