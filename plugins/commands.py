@@ -61,17 +61,7 @@ async def start(client, message):
             InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')           
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        current_time = datetime.now(pytz.timezone(TIMEZONE))
-        curr_time = current_time.hour        
-        if curr_time < 12:
-            gtxt = "ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 👋" 
-        elif curr_time < 17:
-            gtxt = "ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 👋" 
-        elif curr_time < 21:
-            gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
-        else:
-            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
+        reply_markup = InlineKeyboardMarkup(buttons)     
         m=await message.reply_text("<i>𝐄𝐃𝐀 𝐌𝐎𝐍𝐄 🤌🏻<i>")
         await asyncio.sleep(2)
         await m.edit_text("👀")
@@ -136,17 +126,7 @@ async def start(client, message):
             InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')           
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        current_time = datetime.now(pytz.timezone(TIMEZONE))
-        curr_time = current_time.hour        
-        if curr_time < 12:
-            gtxt = "ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 👋" 
-        elif curr_time < 17:
-            gtxt = "ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 👋" 
-        elif curr_time < 21:
-            gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
-        else:
-            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
+        reply_markup = InlineKeyboardMarkup(buttons)       
         m=await message.reply_text("<i>𝐄𝐃𝐀 𝐌𝐎𝐍𝐄 🤌🏻<i>")
         await asyncio.sleep(2)
         await m.edit_text("👀")
