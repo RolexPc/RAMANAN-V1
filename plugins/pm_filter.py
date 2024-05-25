@@ -1184,7 +1184,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "filters":
         buttons = [[
             InlineKeyboardButton('🕹 Mᴀɴᴜᴀʟ FIʟᴛᴇʀ', 'reqinfo'),
-            InlineKeyboardButton('📥 Aᴜᴛᴏ FIʟᴛᴇʀ', 'reqinfo')
+            InlineKeyboardButton('📥 Aᴜᴛᴏ FIʟᴛᴇʀ', 'extinfo')
         ],[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),            
         ]]
@@ -1220,10 +1220,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('💡FIʟᴛᴇʀs', callback_data='filters'),
-            InlineKeyboardButton('⚠️ Fɪʟᴇ Sᴛᴏʀᴇ', 'MINFO')
+            InlineKeyboardButton('⚠️ Fɪʟᴇ Sᴛᴏʀᴇ', 'minfo')
         ], [
-            InlineKeyboardButton('📍Cᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct'),
-            InlineKeyboardButton('⚙ Exᴛʀᴀ Mᴏᴅs', callback_data='extra')
+            InlineKeyboardButton('📍Cᴏɴɴᴇᴄᴛɪᴏɴ', 'cooninfo'),
+            InlineKeyboardButton('⚙ Exᴛʀᴀ Mᴏᴅs', 'extinfo')
         ], [
             InlineKeyboardButton('♻️ Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('📈 Sᴛᴀᴛᴜs', callback_data='stats')
