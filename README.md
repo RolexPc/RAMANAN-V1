@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://telegra.ph/file/16b9b8ee680840f1d1cf2.jpg" alt="AC MOVIES BOTS Logo">
+  <img src="" alt="AC MOVIES BOTS Logo">
 </p>
 <h1 align="center">
  AC MOVIES BOTS
@@ -55,7 +55,7 @@
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
-<a href="https://heroku.com/deploy?template=https://github.com/RolexPc/NIKHILA-FILTER-V2">
+<a href="https://heroku.com/deploy?template=https://github.com/RolexPc/RAMANAN-FILTER-V2">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy To Heroku">
 </a>
 </p>
