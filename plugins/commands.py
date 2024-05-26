@@ -95,7 +95,7 @@ async def start(client, message):
             [
                 InlineKeyboardButton("📢 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑻𝑶 𝑱𝑶𝑰𝑵 𝑪𝑯𝑨𝑵𝑵𝑬𝑳 📢", url=invite_link.invite_link)
             ],[
-                InlineKeyboardButton('🤔 𝑯𝑶𝑾 𝑻𝑶 𝑮𝑬𝑻 𝑭𝑰𝑳𝑬 🤔', callback_data='REQINFO')
+                InlineKeyboardButton('🤔 𝑯𝑶𝑾 𝑻𝑶 𝑮𝑬𝑻 𝑭𝑰𝑳𝑬 🤔', callback_data='reqinfo')
             ]
         ]
 
