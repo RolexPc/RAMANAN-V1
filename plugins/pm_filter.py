@@ -155,12 +155,12 @@ async def next_page(bot, query):
                 btn.append(
                     [InlineKeyboardButton("⏪ 𝑷𝒓𝒆𝒗𝒊𝒐𝒖𝒔", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")])
                 btn.append(
-                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+lHi0hcen1vJjNTll")]
+                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+YVSmybWbaOZlYzhl")]
                 )
             elif off_set is None:
                 btn.append([InlineKeyboardButton("📖 𝑷𝒂𝒈𝒆𝒔", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"), InlineKeyboardButton("𝑵𝒆𝒙𝒕 ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
                 btn.append(
-                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+lHi0hcen1vJjNTll")]
+                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+YVSmybWbaOZlYzhl")]
                 )
             else:
                 btn.append(
@@ -171,7 +171,7 @@ async def next_page(bot, query):
                     ],
                 )
                 btn.append(
-                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+lHi0hcen1vJjNTll")]
+                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+YVSmybWbaOZlYzhl")]
                 )
         else:
             if 0 < offset <= int(MAX_B_TN):
@@ -184,12 +184,12 @@ async def next_page(bot, query):
                 btn.append(
                     [InlineKeyboardButton("⏪ 𝑷𝒓𝒆𝒗𝒊𝒐𝒖𝒔", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/int(MAX_B_TN))+1} / {math.ceil(total/int(MAX_B_TN))}", callback_data="pages")])
                 btn.append(
-                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+lHi0hcen1vJjNTll")]
+                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+YVSmybWbaOZlYzhl")]
                 )
             elif off_set is None:
                 btn.append([InlineKeyboardButton("📖 𝑷𝒂𝒈𝒆𝒔", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/int(MAX_B_TN))+1} / {math.ceil(total/int(MAX_B_TN))}", callback_data="pages"), InlineKeyboardButton("𝑵𝒆𝒙𝒕 ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
                 btn.append(
-                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+lHi0hcen1vJjNTll")]
+                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+YVSmybWbaOZlYzhl")]
                 )
             else:
                 btn.append(
@@ -200,7 +200,7 @@ async def next_page(bot, query):
                     ],
                 )
                 btn.append(
-                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+lHi0hcen1vJjNTll")]
+                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+YVSmybWbaOZlYzhl")]
                 )
     except KeyError:
         await save_group_settings(query.message.chat.id, 'max_btn', True)
@@ -214,12 +214,12 @@ async def next_page(bot, query):
             btn.append(
                 [InlineKeyboardButton("⏪ 𝑷𝒓𝒆𝒗𝒊𝒐𝒖𝒔", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")])
             btn.append(
-                [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+lHi0hcen1vJjNTll")]
+                [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+YVSmybWbaOZlYzhl")]
             )
         elif off_set is None:
             btn.append([InlineKeyboardButton("📖 𝑷𝒂𝒈𝒆𝒔", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"), InlineKeyboardButton("𝑵𝒆𝒙𝒕 ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
             btn.append(
-                [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+lHi0hcen1vJjNTll")]
+                [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+YVSmybWbaOZlYzhl")]
             )
         else:
             btn.append(
@@ -230,14 +230,14 @@ async def next_page(bot, query):
                 ],
             )
             btn.append(
-                [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+lHi0hcen1vJjNTll")]
+                [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+YVSmybWbaOZlYzhl")]
             )
     btn.insert(0, [
         InlineKeyboardButton("🔻𝐒𝐄𝐍𝐃 𝐀𝐋𝐋 𝐅𝐈𝐋𝐄𝐒🔻", callback_data=f"send_fall#files#{offset}#{req}"),
         InlineKeyboardButton("🔻𝐋𝐀𝐍𝐆𝐔𝐀𝐆𝐄𝐒🔻", callback_data=f"select_lang#{req}")
     ])
     btn.insert(0, [
-            InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒🔺", url=f"https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS"),
+            InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒🔺", url=f"https://t.me/+rrK46TeoN-5lNjZl"),
             InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐈𝐍𝐒𝐓𝐆𝐑𝐀𝐌🔺", url=f"https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg==")
         ])
     try:
@@ -322,7 +322,7 @@ async def language_check(bot, query):
         ])
 
         btn.insert(0, [
-            InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒🔺", url=f"https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS"),
+            InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒🔺", url=f"https://t.me/+rrK46TeoN-5lNjZl"),
             InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐈𝐍𝐒𝐓𝐆𝐑𝐀𝐌🔺", url=f"https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg==")
         ])
         if offset != "":
@@ -341,7 +341,7 @@ async def language_check(bot, query):
                     btn.append(
                         [InlineKeyboardButton("📖 𝑷𝒂𝒈𝒆𝒔", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/int(MAX_B_TN))}",callback_data="pages"), InlineKeyboardButton(text="𝑵𝒆𝒙𝒕 ⏩",callback_data=f"next_{req}_{key}_{offset}")])
                     btn.append(
-                        [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+lHi0hcen1vJjNTll")]
+                        [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+YVSmybWbaOZlYzhl")]
                     )
             except KeyError:
                 await save_group_settings(query.message.chat.id, 'max_btn', True)
@@ -350,7 +350,7 @@ async def language_check(bot, query):
                 )
         else:
             btn.append(
-            [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+lHi0hcen1vJjNTll")]
+            [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+YVSmybWbaOZlYzhl")]
             )
         try:
             await query.edit_message_reply_markup(
@@ -1592,7 +1592,7 @@ async def auto_filter(client, msg, spoll=False):
     ])
 
     btn.insert(0, [
-            InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒🔺", url=f"https://t.me/OTT_ARAKAL_THERAVAD_MOVIESS"),
+            InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒🔺", url=f"https://t.me/+rrK46TeoN-5lNjZl"),
             InlineKeyboardButton("🔺𝐎𝐓𝐓 𝐈𝐍𝐒𝐓𝐆𝐑𝐀𝐌🔺", url=f"https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg==")
         ])
 
@@ -1605,13 +1605,13 @@ async def auto_filter(client, msg, spoll=False):
                 btn.append(
                     [InlineKeyboardButton("📖 𝑷𝒂𝒈𝒆𝒔", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="𝑵𝒆𝒙𝒕 ⏩",callback_data=f"next_{req}_{key}_{offset}")])
                 btn.append(
-                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+lHi0hcen1vJjNTll")]              
+                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+YVSmybWbaOZlYzhl")]              
                 )
             else:
                 btn.append(
                     [InlineKeyboardButton("📖 𝑷𝒂𝒈𝒆𝒔", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/int(MAX_B_TN))}",callback_data="pages"), InlineKeyboardButton(text="𝑵𝒆𝒙𝒕 ⏩",callback_data=f"next_{req}_{key}_{offset}")])
                 btn.append(
-                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+lHi0hcen1vJjNTll")]
+                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+YVSmybWbaOZlYzhl")]
                 )            
         except KeyError:
             await save_group_settings(message.chat.id, 'max_btn', True)
@@ -1620,7 +1620,7 @@ async def auto_filter(client, msg, spoll=False):
             )
     else:
         btn.append(
-            [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+lHi0hcen1vJjNTll")]
+            [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+YVSmybWbaOZlYzhl")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
