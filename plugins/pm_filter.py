@@ -153,7 +153,9 @@ async def next_page(bot, query):
                 off_set = offset - 10
             if n_offset == 0:
                 btn.append(
-                    [InlineKeyboardButton("⏪ 𝑷𝒓𝒆𝒗𝒊𝒐𝒖𝒔", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")]
+                    [InlineKeyboardButton("⏪ 𝑷𝒓𝒆𝒗𝒊𝒐𝒖𝒔", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")])
+                btn.append(
+                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+lHi0hcen1vJjNTll")]
                 )
             elif off_set is None:
                 btn.append([InlineKeyboardButton("📖 𝑷𝒂𝒈𝒆𝒔", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"), InlineKeyboardButton("𝑵𝒆𝒙𝒕 ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
@@ -180,7 +182,9 @@ async def next_page(bot, query):
                 off_set = offset - int(MAX_B_TN)
             if n_offset == 0:
                 btn.append(
-                    [InlineKeyboardButton("⏪ 𝑷𝒓𝒆𝒗𝒊𝒐𝒖𝒔", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/int(MAX_B_TN))+1} / {math.ceil(total/int(MAX_B_TN))}", callback_data="pages")]
+                    [InlineKeyboardButton("⏪ 𝑷𝒓𝒆𝒗𝒊𝒐𝒖𝒔", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/int(MAX_B_TN))+1} / {math.ceil(total/int(MAX_B_TN))}", callback_data="pages")])
+                btn.append(
+                    [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+lHi0hcen1vJjNTll")]
                 )
             elif off_set is None:
                 btn.append([InlineKeyboardButton("📖 𝑷𝒂𝒈𝒆𝒔", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/int(MAX_B_TN))+1} / {math.ceil(total/int(MAX_B_TN))}", callback_data="pages"), InlineKeyboardButton("𝑵𝒆𝒙𝒕 ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
@@ -208,7 +212,9 @@ async def next_page(bot, query):
             off_set = offset - 10
         if n_offset == 0:            
             btn.append(
-                [InlineKeyboardButton("⏪ 𝑷𝒓𝒆𝒗𝒊𝒐𝒖𝒔", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")]
+                [InlineKeyboardButton("⏪ 𝑷𝒓𝒆𝒗𝒊𝒐𝒖𝒔", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")])
+            btn.append(
+                [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+lHi0hcen1vJjNTll")]
             )
         elif off_set is None:
             btn.append([InlineKeyboardButton("📖 𝑷𝒂𝒈𝒆𝒔", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"), InlineKeyboardButton("𝑵𝒆𝒙𝒕 ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
