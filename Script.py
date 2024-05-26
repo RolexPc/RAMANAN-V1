@@ -222,9 +222,9 @@ You only need to do one thing to get the file, you can click on the button below
 <b>📂 Fɪʟᴇ ɴᴀᴍᴇ : <code>{file_name}</code></b>
 
 <b>
-╭─────── • ◆ • ───────╮
+╭────── • ◆ • ──────╮
 ⚙️ Fɪʟᴇ Sɪᴢᴇ :  {file_size}
-╰─────── • ◆ • ───────╯
+╰────── • ◆ • ──────╯
 
  ╔═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╗
  ♻️ 𝑱𝑶𝑰𝑵 :- <a href=https://t.me/+TGgjhMVmwdUwNWY1> 𝐆𝐑𝐎𝐔𝐏 </a>
