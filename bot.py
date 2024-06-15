@@ -17,7 +17,6 @@ from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 from Script import script 
 from datetime import date, datetime 
-from aiohttp import web
 import pytz
 from sample_info import tempDict
 
@@ -67,13 +66,7 @@ class Bot(Client):
         now = datetime.now(tz)
         time = now.strftime("%H:%M:%S %p")
         await self.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))     
-      
-        app = web.AppRunner(await web_server())
-        from plugins import web_server
-        await app.setup()
-        bind_address = "0.0.0.0"
-        await web.TCPSite(app, bind_address, PORT).start()
-
+            
     async def stop(self, *args):
         await super().stop()
         logging.info("Bot stopped. Bye.")
